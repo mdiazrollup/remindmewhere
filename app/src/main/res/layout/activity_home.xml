@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp">
+
+    <Button
+        android:id="@+id/ha_add_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_location"
+        android:background="@drawable/button_green_rounded_corners"
+        android:drawableLeft="@drawable/ic_add_white"
+        android:drawablePadding="5dp"
+        android:gravity="start|center_vertical"
+        android:textColor="@color/colorTextIcons"
+        android:onClick="goToAddLocation"/>
+
+    <ListView
+        android:id="@+id/ha_list_view_loc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:divider="@null">
+    </ListView>
+</LinearLayout>

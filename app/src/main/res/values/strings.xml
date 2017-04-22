@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Remind Me Where</string>
+    <string name="add_location">Add Location</string>
+    <string name="add_reminder">Add Reminder</string>
+    <string name="name">Name</string>
+    <string name="current_location">Use Current Location</string>
+    <string name="current_location_text">Current Location</string>
+    <string name="save">Save</string>
+    <string name="type_name">Add a name</string>
+    <string name="description">Description</string>
+    <string name="type_description">Add a description</string>
+    <string name="delete">Delete</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitud">Longitud</string>
+    <string name="click_current_location">Click the current location button</string>
+    <!-- Error strings -->
+    <string name="geofence_not_available">Geofence service is not available now</string>
+    <string name="geofence_too_many_geofences">Your app has registered too many geofences</string>
+    <string name="geofence_too_many_pending_intents">
+        You have provided too many PendingIntents to the addGeofences() call
+    </string>
+    <string name="unknown_geofence_error">
+        Unknown error: the Geofence service is not available now
+    </string>
+    <string name="geofence_transition_invalid_type">
+        Geofence transition error: invalid transition type %1$d
+    </string>
+    <!-- Transition type strings -->
+    <string name="geofence_transition_entered">Entered</string>
+    <string name="geofence_transition_exited">Exited</string>
+    <string name="geofence_transition_dwell">Dwell</string>
+    <string name="unknown_geofence_transition">Unknown Transition</string>
+</resources>

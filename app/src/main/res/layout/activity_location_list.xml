@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/activity_location_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLight">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/lla_add_reminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_reminder"
+            android:background="@drawable/button_green_rounded_corners"
+            android:drawableLeft="@drawable/ic_add_white"
+            android:drawablePadding="5dp"
+            android:gravity="start|center_vertical"
+            android:textColor="@color/colorTextIcons"
+            android:onClick="goToAddReminder"/>
+
+        <ListView
+            android:id="@+id/lla_list_view_rem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:divider="@null">
+        </ListView>
+    </LinearLayout>
+</LinearLayout>

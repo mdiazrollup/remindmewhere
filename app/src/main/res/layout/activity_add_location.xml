@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_location"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    tools:context="com.example.maria.remindmewhere.AddLocationActivity">
+
+
+    <TextView
+        android:id="@+id/ala_name_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_edit_grey"
+        android:drawablePadding="5dp"
+        android:gravity="start|center_vertical"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="@string/name"/>
+
+    <EditText
+        android:id="@+id/ala_name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:hint="@string/type_name"/>
+
+    <TextView
+        android:id="@+id/ala_current_loc_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_target_grey"
+        android:drawablePadding="5dp"
+        android:gravity="start|center_vertical"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="@string/current_location_text"/>
+
+    <EditText
+        android:id="@+id/ala_current_loc_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:enabled="false"
+        android:hint="@string/click_current_location"/>
+
+    <Button
+        android:id="@+id/ala_set_loc_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/current_location"
+        android:textColor="@color/colorTextIcons"
+        android:background="@drawable/button_accent_rounded_corners"
+        android:onClick="setCurrentLocation"/>
+
+    <Button
+        android:id="@+id/ala_save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/save"
+        android:textColor="@color/colorTextIcons"
+        android:background="@drawable/button_green_rounded_corners"
+        android:onClick="saveLocation"/>
+
+</LinearLayout>
